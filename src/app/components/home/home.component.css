@@ -1,0 +1,14 @@
+
+.cath{
+    font-size: 40px;
+}
+@media(min-width:1000px){
+    .col-md-6.my-4{
+        height: 300px;
+    }
+}
+.titles{
+    font-size: 28px;
+    font-weight: bold;
+    color: #001C30;
+}

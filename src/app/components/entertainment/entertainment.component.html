@@ -1,0 +1,24 @@
+<div>
+    <h2 class="fw-bold cath">Entertainment</h2>
+    <div *ngFor="let news of entertainmentNews;let i=index">
+        <div class="row deneme" *ngIf="(page-1)*6+i<page*6" >
+            
+          <div class="col-md-6 my-4">
+            <img [src]="entertainmentNews[(page-1)*6+i].urlToImage" class="img-fluid rounded" alt="">
+          </div>
+          <div class="col-md-6 my-4">
+            <a class="btn btn-outline-secondary" href="#">{{entertainmentNews[(page-1)*6+i].title}}</a>
+            <p class="my-2">{{entertainmentNews[(page-1)*6+i].description}}</p>
+          </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" (click)="previousPage()">Previous</a></li>
+          <li [class.active]="(this.page==1)" class="page-item"><a class="page-link" (click)="firstPage()">1</a></li>
+          <li [class.active]="(this.page==2)" class="page-item"><a class="page-link" (click)="secondPage()">2</a></li>
+          <li [class.active]="(this.page==3)" class="page-item"><a class="page-link" (click)="thirdPage()">3</a></li>
+          <li class="page-item"><a class="page-link" (click)="nextPage()">Next</a></li>
+        </ul>
+      </nav>
+</div>

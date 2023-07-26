@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer{
+    padding: 30px;
+}
+.footer .brand{
+    color:#080202;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px;
+}
+.footer .brand:hover{
+    color:#11009E;
+}
+.copy{
+    font-size: 16px;
+    color:#080202;
+    padding: 10px;
+}
+.copy i{
+    font-size: 6px;
+}
+.footer-links a{
+    color:#080202;
+    padding: 10px;
+}
+.footer-links a:hover{
+    color:#9BABB8;
+}
